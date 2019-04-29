@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>修改密码</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" href="css/cui.css" />
+	<link rel="stylesheet" href="css/lib.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+	<header id="hd">
+		<div class="left">
+			<a href="" class="a-back"></a>
+		</div>
+		<h1>修改密码</h1>
+		 
+	</header>
+
+	<section id="bd">
+		 
+            <div class="m-password">
+                <div class="inp">
+                     <span>请输入旧密码：</span>
+                     <input type="password" placeholder="6-12位数字或字母">
+                </div>
+                <div class="inp">
+                     <span>请输入旧密码：</span>
+                     <input type="password" placeholder="6-12位数字或字母">
+                </div>
+                <div class="inp">
+                     <span>请输入旧密码：</span>
+                     <input type="password" placeholder="6-12位数字或字母">
+                </div>
+                <a href="###" class="save-bt">保存</a>
+            </div>
+            <!--修改成功提示-->
+            <div class="m-sucess m-pop">
+                <p><i></i>密码修改成功</p>
+            </div>
+
+            <!--修改失败提示-->
+            <div class="m-fase m-pop">
+                <p><i></i>密码修改失败</p>
+            </div>
+		 
+	</section>
+    
+	
+
+  
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/lib.js"></script>
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
+        <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+        <script>
+        $(function(){
+
+           /*弹框提示*/
+            $(".save-bt").click(function(e) {
+                e.stopPropagation();                
+                $(".m-sucess").stop().show();        
+            });
+            $(document).click(function() {       
+                $(".m-sucess").stop().hide();                 
+            });
+        })
+            
+        </script>
+
+</body>
+</html>

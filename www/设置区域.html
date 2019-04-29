@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>设置区域</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" href="css/cui.css" />
+	<link rel="stylesheet" href="css/lib.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=700b132845ef5b0b135066dfa0222a37"></script>
+</head>
+<body>
+
+	<header id="hd">
+		<div class="left">
+			<a href="" class="a-back"></a>
+		</div>
+		<h1>路线选择</h1>
+		<div class="right">
+			<a href="" class="a-user"></a>
+		</div>
+	</header>
+
+	<div id="bd">
+		<div class="map-btn">
+			<a href="" class="a3"><i></i>规划区域</a>
+			<a href="" class="a2">重新创建</a>
+		</div>
+		<div class="m-map m-map-1">
+			<div id="dituContent"></div>
+		</div>
+		<div class="map-bot">
+			<a href="" class="btn">确认选择</a>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/lib.js"></script>
+	<script>
+		$('.map-bot li').click(function(event) {
+			$(this).addClass('on').siblings('li').removeClass('on');
+		});
+		$('.map-bot .open').click(function(event) {
+			$(this).toggleClass('on').next('ul').slideToggle();
+		});
+	</script>
+
+	<script type="text/javascript" src="js/map.js"></script>
+
+
+</body>
+</html>

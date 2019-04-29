@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" href="css/cui.css" />
+	<link rel="stylesheet" href="css/lib.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="index" style="background-image: url(images/bg2.jpg);">
+
+	<section id="bd">
+		<div class="m-inp">
+			<div class="tit">微信服务在线</div>
+			<div class="con">
+				<form action="">
+					<div class="inp">
+						<input type="text" class="i1" placeholder="终端ID">
+						<input type="password" class="i2" placeholder="终端密码">
+					</div>
+					<button class="btn-login">立即登录</button>
+				</form>
+				<p class="p-txt1">
+					若没有账号，请注册！<a href="#pop-pass" class="fancybox">忘记密码</a>
+				</p>
+				<a href="" class="btn-reg">注册</a>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- 忘记密码弹窗 -->
+	<div class="m-pop" id="pop-pass">
+		<h3 class="pop-tit">忘记密码</h3>
+		<div class="con">
+			<a href="#pop-text" class="a1 fancybox">短信验证找回</a>
+			<a href="#pop-tel" class="a2 fancybox">电话联系管理员</a>
+		</div>
+		<div class="btn">
+			<a href="" class="yes">取消</a>
+			<a href="" class="no">确定</a>
+		</div>
+	</div>
+
+	<!-- 电话找回弹窗 -->
+	<div class="m-pop" id="pop-tel">
+		<h3 class="pop-tit">忘记密码</h3>
+		<p>管理员电话</p>
+		<a href="tel:13488632700" class="tel">13488632700</a>
+	</div>
+
+	<!-- 短信雁阵弹窗 -->
+	<div class="m-pop" id="pop-text">
+		<h3 class="pop-tit">短信验证</h3>
+		<form action="">
+			<div class="con">
+				<div class="inp code">
+					<input type="text" placeholder="请输入手机号" class="inp1">
+					<input type="button" id="get-code" value="点击获取" class="js-code">
+				</div>
+				<div class="inp">
+					<input type="text" placeholder="请输入手机验证码">
+				</div>
+			</div>
+			<div class="btn">
+				<button>点击验证</button>
+			</div>
+		</form>
+	</div>
+
+
+
+	
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/lib.js"></script>
+	<script>
+	    var wait = 60;
+	    function mbtime(o) {
+	        if (wait == 60  ) {
+	            //ajax发送短信
+	        }
+	        if (wait == 0) {
+	            o.val('重发验证码').attr('disabled',false).removeClass('disabled');
+	            wait = 60;
+	        } else {
+	            o.attr('disabled',true).val( wait + '秒').addClass('disabled');
+	            wait--;
+	            setTimeout(function() {mbtime(o)},1000);
+	        }
+	    }
+	    $('#get-code').click(function(event) {
+	        mbtime( $(this) )
+	        return false;
+	    });
+	</script>
+
+	<link rel="stylesheet" href="css/jquery.fancybox.css" />
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script>
+		$(".fancybox").fancybox({
+			closeBtn  : false,
+			padding: 0
+		});
+	</script>
+
+
+
+</body>
+</html>

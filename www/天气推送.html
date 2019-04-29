@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>天气推送</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" href="css/cui.css" />
+	<link rel="stylesheet" href="css/lib.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+	<header id="hd">
+		<div class="left">
+			<a href="" class="a-back"></a>
+		</div>
+		<h1>天气推送</h1>
+		 
+	</header>
+
+	<section id="bd">
+		 
+            <div class="m-weather">
+                <div class="m-select">
+                    天气推送
+                    <a href="###" class="select-bt"><span></span></a>
+                </div>
+                <input type="button" value="保存" class="save-bt"/>
+            </div>
+            
+		 
+	</section>
+	
+
+
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/lib.js"></script>
+    <script type="text/javascript">
+        $(function(){            
+            
+            $('.select-bt').click(function() {
+                $(this).toggleClass("on");  
+            }); 
+             
+            
+             
+                       
+        })
+    </script>
+
+</body>
+</html>

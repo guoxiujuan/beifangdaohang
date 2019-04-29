@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>根据时间查询轨迹</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" href="css/cui.css" />
+	<link rel="stylesheet" href="css/lib.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=700b132845ef5b0b135066dfa0222a37"></script>
+</head>
+<body>
+
+	<header id="hd">
+		<div class="left">
+			<a href="" class="a-back"></a>
+		</div>
+		<h1>按时间段查询</h1>
+		<div class="right">
+			<a href="" class="a-txt1">取消</a>
+		</div>
+	</header>
+
+	<div id="bd">
+		<div class="map-time">
+			<div class="con">
+				<form action="">
+					<input type="text" placeholder="请输入开始时间" class="inp1">
+					<input type="text" placeholder="请输入截止时间" class="inp2">
+					<button class="btn">搜索</button>
+				</form>
+			</div>
+		</div>
+		<div class="m-map">
+			<div id="dituContent"></div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/lib.js"></script>
+
+	<script type="text/javascript" src="js/map.js"></script>
+
+
+
+</body>
+</html>

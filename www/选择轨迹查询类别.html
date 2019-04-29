@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>选择轨迹查询类别</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" href="css/cui.css" />
+	<link rel="stylesheet" href="css/lib.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+	<header id="hd">
+		<div class="left">
+			<a href="" class="a-back"></a>
+		</div>
+		<h1>员工轨迹</h1>
+        <div class="right">
+            <a href="" class="a-txt1">查询</a>
+        </div>
+		 
+	</header>
+
+	<section id="bd">
+		 
+            <div class="em-mess">
+                <div class="inp">                     
+                    <p>按照用户ID查询</p>
+                    <i></i>                    
+                </div>
+                <div class="inp on">   
+                    <p>按照时间段查询</p>                  
+                     
+                    <i></i>                    
+                </div>
+                 
+            </div>
+             
+		 
+	</section>
+	
+
+
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/lib.js"></script>
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
+        <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+        <script>
+        $(function(){
+
+            $(".em-mess div").click(function(){
+                $(this).addClass('on').siblings().removeClass('on');
+            })
+        })
+            
+        </script>
+
+</body>
+</html>

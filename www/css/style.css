@@ -1,0 +1,110 @@
+
+/*******************************
+    -------[=苹果]-------
+********************************/
+/*天气推送*/
+.m-weather .m-select{height: 40px; line-height: 40px; padding: 0 10px; font-size: 16px; color:#000; background-color: #fff;}
+.m-weather .select-bt{float: right; background-color: #dfdfdf; border-radius: 35px;
+width: 50px; height: 24px; position: relative; margin-top: 9px;}
+.m-weather a.on{background-color: #0095da;}
+.m-weather .select-bt span{display: block; position: absolute;  width: 20px; height: 20px; top: 2px; left: 2px; background: url(../images/gimg1.png) no-repeat left top; background-size: 20px auto;
+    -o-background-size: 20px auto;-ms-background-size: 20px auto;-moz-background-size: 20px auto;-webkit-background-size: 20px auto;
+    -o-transition:.3s;
+-ms-transition:.3s;
+-moz-transition:.3s;
+-webkit-transition:.3s;
+transition:.3s;}
+.m-weather .select-bt.on span{left: 27px;}
+.m-weather .select-bt img{display: block; width: 100%; height: 100%; }
+.m-name .save-bt,.m-weather .save-bt ,.m-password .save-bt {display: block; text-align: center; height: 40px; line-height: 40px; font-size: 16px; color: #fff; width: 80%; margin: 20px auto; background-color: #3ece89; border-radius: 8px; border: none;}
+
+/*我的轨迹*/
+#hd .right2{position: absolute; width: auto;height: 45px;top: 0;padding-right: 10px; right: 0;}
+#hd .a-txt2{width: auto;height: 45px; text-align: center;line-height: 45px;color: #fff;font-size: 16px;}
+.m-notes .ul-list{font-size: 14px; color: #000;}
+.m-notes .ul-list li{ padding: 10px 45px; line-height: 22px; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc; margin-bottom: 10px; background-color: #fff; position: relative;}
+.m-notes .ul-list i{display: inline-block;width: 24px;height: 35px;vertical-align: middle; background: url(../images/gimg2.png) no-repeat center center; background-position: center center;background-repeat: no-repeat;position: relative;top: -2px;
+-o-background-size: 18px auto;-ms-background-size: 18px auto;-moz-background-size: 18px auto;-webkit-background-size: 18px auto;
+background-size: 18px auto; margin-right: 5px; position: absolute; top: 50%; left: 10px; margin-top: -17px;}
+.m-notes .ul-list a{width: 32px;height: 50px;vertical-align: middle; background: url(../images/gimg3.png) no-repeat center center; background-position: center center;background-repeat: no-repeat;position: relative;top: -2px;
+-o-background-size: 18px auto;-ms-background-size: 18px auto;-moz-background-size: 18px auto;-webkit-background-size: 18px auto;
+background-size: 18px auto; position: absolute; top: 50%; right: 10px; margin-top: -25px;}
+.m-notes .ul-list em,.m-notes .ul-list .p2{color: #b2b2b2;}
+
+/*员工轨迹*/
+.m-notes .ul-list2 span{color: #00a8ff; text-overflow:clip;}
+/*按照ID查询*/
+.ul-list3 span{color: #e03d3d;}
+/*我的团队*/
+.m-team{padding: 40px 10px;}
+.m-team .con{padding:0 2%; }
+.m-team .con .div1{width: 8%; background-color: #0061b1; height: 7px;}
+.m-team .con .div2{width: 100%; background-color: #0061b1; height: 7px;}
+.m-team .con .div3{padding: 65px 0 30px; text-align: center; background: url(../images/gimg4.jpg) #008cff no-repeat center 30px; background-size: 34px auto;}
+.m-team .con .div3 p{color: #fff; font-size: 16px; line-height: 30px;}
+
+/*我的团队-编辑*/
+.m-team2{padding: 0 0;}
+.m-team .con .div3 input{width: 80%; border: none; margin-top: 5px; text-align: center; background-color: #fff; border-radius: 16px 16px; line-height: 30px; padding: 0 10px; font-size: 14px; color: #4c4c4c;}
+.m-team .con a.del{display: block; margin-top:10px; height: 30px; background: url(../images/gimg5.png) no-repeat center top; background-size: 20px auto;}
+/*我的团队-团队详情*/
+.m-team .ul-list{font-size: 14px; color: #000;}
+.m-team .ul-list li{ padding: 10px 50px 10px 60px; line-height: 44px; border-bottom: 1px solid #ccc; background-color: #fff; position: relative;}
+.m-team .ul-list .face{width: 40px; height: 40px; border-radius: 50%;position: absolute; top: 50%; left: 10px; margin-top: -20px;}
+.m-team .ul-list .face img{border-radius: 50%; width: 100%; height: 100%;}
+.m-team .ul-list a.del2{width: 32px;height: 50px;vertical-align: middle; background: url(../images/gimg3.png) no-repeat center center; background-position: center center;background-repeat: no-repeat;position: relative;top: -2px;
+-o-background-size: 18px auto;-ms-background-size: 18px auto;-moz-background-size: 18px auto;-webkit-background-size: 18px auto;
+background-size: 18px auto; position: absolute; top: 50%; right: 12px; margin-top: -25px;}
+.m-team .ul-list li p span{color: #00a8ff;}
+
+/*我的团队-添加成员*/
+.m-add .inp{margin: 0 20px;padding-bottom: 20px;}     
+.m-add .inp input {width: 100%;display: block;height: 40px;line-height: 38px \9; background-color: #eee;border: 0;
+    padding: 0 10px;font-size: 14px;color: #000; margin-bottom: 6px;}
+.m-add .btn a.yes,.m-add2 .btn a.yes{color: #1c9e3e;}
+
+/*我的团队-添加成员-确认添加*/
+.m-add2 .mess{position: relative; padding: 10px 10px 30px 85px;border-radius: 50%;  }
+.m-add2 .mess .face{width: 60px; padding: 4px 4px; height: 60px; border-radius: 50%;position: absolute; top: 0px; left: 15px;background-color: #cdcdcd;}
+.m-add2 .mess .face img{border-radius: 50%; width: 100%; height: 100%;}
+.m-add2 .mess p{color: #5f5f5f; line-height: 22px;}
+.m-add2 .mess p span{color: #00a9ff;}
+
+/*修改昵称+修改密码*/
+.m-name .inp,.m-password .inp{padding: 14px 10px; color: #bababa; background-color: #fff; font-size: 14px;  }
+.m-name .inp input,.m-password .inp input{height: 30px; line-height: 30px; border: none;width: 70%; font-size: 14px;}
+.m-name .inp span,.m-password .inp span{color: #000;}
+.m-password .inp input{width: 50%;}
+.m-password .inp{border-bottom: 1px solid #ddd;}
+ 
+/*修改昵称成功失败提示*/
+.m-sucess,.m-fase{display:none;border-radius: 3px;padding:25px 10px 30px 40px;width: 200px; height: 100px; color: #fff; font-size: 14px; background: url(../images/gbg1.png) repeat left top; opacity: 0.8;
+ position: absolute; top: 20%; left: 50%; margin-left: -100px;} 
+.m-sucess i,.m-fase i{display:block;  width:20px; height: 20px; position: absolute; top: 50%; margin-top: -10px; left: 0;  background: url(../images/gimg6.png) no-repeat center center; background-size:20px auto;
+-o-background-size: 20px auto;-ms-background-size: 20px auto;-moz-background-size: 20px auto;-webkit-background-size: 20px auto;}
+.m-fase i{background: url(../images/gimg7.png) no-repeat center center; background-size: 20px auto;-o-background-size: 20px auto;-ms-background-size: 20px auto;-moz-background-size: 20px auto;-webkit-background-size: 20px auto;}
+.m-sucess p,.m-fase p{line-height: 50px; height: 50px; position: relative; padding-left: 30px;}
+
+
+/*选择轨迹查询*/
+.em-mess{padding: 20px 10px; }
+.em-mess .inp{position: relative; width: 90%; margin: 0px auto;}
+.em-mess .inp p{width: 100%; padding: 0 10px; font-size: 14px; border-radius: 5px; background-color: #9b9b9b; height: 42px; line-height: 42px; color: #fff; margin-bottom: 20px; display: block; border: none; }
+.em-mess .inp  i{position: absolute; display: block; width: 20px; height: 20px; background: url(../images/gimg8.png) no-repeat center center;
+top:50%; right: 12px; margin-top: -10px; background-size: 20px auto;-o-background-size: 20px auto;-ms-background-size: 20px auto;-moz-background-size: 20px auto;-webkit-background-size: 20px auto;}
+.em-mess .on p{background-color: #3ece89;}
+.em-mess .on i{background: url(../images/gimg9.png) no-repeat center center; background-size: 20px auto;-o-background-size: 20px auto;-ms-background-size: 20px auto;-moz-background-size: 20px auto;-webkit-background-size: 20px auto;}
+
+/*按照ID查询*/
+.search{padding: 0 10px; height: 42px; line-height: 42px; -webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;   
+box-sizing: border-box; background-color: #004d75; color: #fff;}
+.search .l-sear,.search .r-sear{width: 45%; position: relative; float: left;height: 42px; line-height: 42px;}
+.search .l-sear input{width: 100%;background-color: #004d75; border: none; color: #fff; font-size: 14px;height: 42px; line-height: 42px; }
+.search .r-sear a{display: block; width: 20px; height: 20px; background: url(../images/gimg10.png) no-repeat center center; 
+background-size: 20px auto; position: absolute; top: 50%; left: 20px; margin-top: -10px;}
+.search .r-sear a.a2{background: url(../images/gimg11.png) no-repeat center center; 
+background-size: 20px auto; left: 100%;}
+.search .l-sear input::-webkit-input-placeholder {color: #fff;}
+.search .l-sear input::-moz-placeholder {color: #fff; }
+.search .l-sear input::-ms-input-placeholder {color: #fff;}
